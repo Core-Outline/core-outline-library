@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/core-outline-library/static/css/main.bb87fbb3.css",
-    "main.js": "/core-outline-library/static/js/main.a25334c5.js",
+    "main.js": "/core-outline-library/static/js/main.a1adf4d6.js",
     "static/js/453.8aff59f6.chunk.js": "/core-outline-library/static/js/453.8aff59f6.chunk.js",
     "static/media/favicon.ico": "/core-outline-library/static/media/favicon.3acd399f363f56f2b69d.ico",
     "index.html": "/core-outline-library/index.html",
     "main.bb87fbb3.css.map": "/core-outline-library/static/css/main.bb87fbb3.css.map",
-    "main.a25334c5.js.map": "/core-outline-library/static/js/main.a25334c5.js.map",
+    "main.a1adf4d6.js.map": "/core-outline-library/static/js/main.a1adf4d6.js.map",
     "453.8aff59f6.chunk.js.map": "/core-outline-library/static/js/453.8aff59f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb87fbb3.css",
-    "static/js/main.a25334c5.js"
+    "static/js/main.a1adf4d6.js"
   ]
 }
