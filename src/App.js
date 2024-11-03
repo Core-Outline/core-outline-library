@@ -4,6 +4,7 @@ import PDFViewer from './PDFViewer';
 import favicon from './images/favicon.ico';
 import './App.css';
 import PDFSummary from './PDFSummary';
+import menuBars from './images/menu-bar.png'
 
 function App() {
   const [files, setFiles] = useState([]);
@@ -13,6 +14,8 @@ function App() {
   const [folderFiles, setFolderFiles] = useState([]);
   const [selectedFileUrl, setSelectedFileUrl] = useState('');
   const [isSummaryCollapsed, setIsSummaryCollapsed] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+
 
   useEffect(() => {
     fetchFolders();
@@ -101,7 +104,8 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="sidebar">
+      <div className={`sidebar ${isSidebarCollapsed ? 'collapsed' : ''}`}>
+        
         <img src={favicon} alt="Core&Outline Library Logo" className="logo" />
         <h1>Core&Outline Library</h1>
         <input 
@@ -116,6 +120,7 @@ function App() {
           multiple 
           onChange={handleFileChange} 
           className="file-input"
+          label='Browse Documents'          
         />
         <button onClick={uploadFiles} className="upload-button">
           Upload
@@ -150,6 +155,10 @@ function App() {
           </>
         )}
       </div>
+      
+      <img onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)} className="collapse-button" background={menuBars} src={menuBars}>
+            {/* {isSidebarCollapsed ? 'Expand' : 'Collapse'} */}
+        </img>
       <div className={`main-content ${isSummaryCollapsed ? 'extended' : ''}`}>
         {selectedFileUrl && <PDFViewer fileUrl={selectedFileUrl} />}
       </div>

@@ -10,8 +10,8 @@ import { jwtDecode } from 'jwt-decode';
 // });
 
 AWS.config.update({
-  accessKeyId: jwtDecode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBQ0siOiJBS0lBNUZUWkM3Rks1WExVRERQTSIsImlhdCI6MTcyODY0NDkxNX0.7bLCDrQWDqH7IN0qIzjYU5T4NWbnxwJDy4RMF_MFutY").ACK,
-  secretAccessKey: jwtDecode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBQ0siOiJNMGMvT25raEN5UVgzaExlRlFBUFh1Y3VMeGw5WnJLYjdBUml0YmpmIiwiaWF0IjoxNzI4NjQ0OTgwfQ.bvOoNnmXOS56qvFm4W1xl6AYA-H0aiy_MhD-ILYybZU").ACK,
+  accessKeyId: jwtDecode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBQ0siOiJBS0lBNUZUWkM3RktYNFFVR1JYSSIsImlhdCI6MTcyOTEzNjQxM30.9L6rWuZL1SUXqbmfmqkuV1Ce_TpR5Y3OxByrMrtTIXI").ACK,
+  secretAccessKey: jwtDecode("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBQ0siOiJvVlhjai9LQ05tY0VLOS81TGFCajZaVFJDMGMvbDdxbHoyQXBSWlVsIiwiaWF0IjoxNzI5MTM2NDEzfQ.pDoutohv5oYHpPDfz6fISl7vdvRPFNsyPgWKzhNaGJg").ACK,
   region: "us-west-2"
 });
 

@@ -8,7 +8,7 @@ function PDFViewer({ fileUrl }) {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
-    <div style={{ height: '100vh', width: '50vw' }}>
+    <div style={{ height: '100vh', width: '90vw' }}>
       <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
         <Viewer 
           fileUrl={fileUrl} 
